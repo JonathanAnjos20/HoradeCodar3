@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       var loop = true;
+
+        while (loop) {
+       var number1 = parseFloat(prompt("Digite o primeiro número: "));
+       var number2 = parseFloat(prompt("Digite o segundo número: "));
+
+       var media = (number1 + number2) / 2;
+
+        if (media >= 9.5) {
+            alert("Aprovado");
+        } else {
+            alert("Reprovado");
+        }
+
+       var continuar = prompt("Continuar? S ou N: ").toLowerCase();
+
+        if (continuar === "n") {
+            loop = false;
+        } else if (continuar !== "s") {
+            alert("Comando errado. Encerrando.");
+            loop = false;
+        }
+        }
+    </script>
+</body>
+</html>
